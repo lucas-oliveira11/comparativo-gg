@@ -1,0 +1,19 @@
+{
+  "name": "comparativo-gg",
+  "version": "0.1",
+  "description": "Gera a tabela de compartivo clássica para partidas do GameGol",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon16.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.gamegol.com.br/_jogos/estatistica_comparacao.asp"],
+      "js": ["comparativo.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
